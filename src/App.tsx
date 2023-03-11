@@ -1,5 +1,6 @@
 import HelloPage from "./component/HelloPage";
 import {BrowserRouter, Route, Routes} from "react-router-dom"
+import CounterPage from "./component/CounterPage";
 
 const App = () => (
     <BrowserRouter>
@@ -7,6 +8,10 @@ const App = () => (
         <Route
           path="/hello"
           element={<HelloPage />}
+        />
+        <Route
+          path="/counter"
+          element={<CounterPage/>}
         />
         <Route
           path="/*"
